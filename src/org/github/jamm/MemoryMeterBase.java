@@ -124,6 +124,10 @@ abstract class MemoryMeterBase extends MemoryMeter
                         stack.push(child);
                 }
             }
+            catch (RuntimeException ignored)
+            {
+
+            }
             catch (Throwable t)
             {
                 throw new RuntimeException(t);
